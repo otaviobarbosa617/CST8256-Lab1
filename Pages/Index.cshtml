@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page - Lab 1";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Statistics</h1>
+    <p>Enter one, two or three numerical numbers and click Calculate button to get their statistics</p>
+    <div class="container d-flex text-left justify-content-center">
+            <form method="post">
+                <div class="form-group row align-items-center">
+                    <label class="col-sm-5 col-form-label" for="FirstNumber">First Number:</label>
+                    <div class="col-sm-5">
+                        <input class="form-control" asp-for="FirstNumber" id="FirstNumber"/>
+                    </div>
+                </div>
+                <br/>
+                <div class="form-group row align-items-center">
+                    <label class="col-sm-5 col-form-label" for="SecondNumber">Second Number:</label>
+                    <div class="col-sm-5">
+                        <input class="form-control" asp-for="SecondNumber" id="SecondNumber"/>
+                    </div>
+                </div> 
+                <br/>
+                <div class="form-group row align-items-center">
+                    <label class="col-sm-5 col-form-label" for="ThirdNumber">Third Number:</label>
+                    <div class="col-sm-5">
+                        <input class="form-control" asp-for="ThirdNumber" id="ThirdNumber"/>
+                    </div>
+                </div>   
+                <br/>
+                <div class="form-group row align-items-center">
+                    <label class="col-sm-5 col-form-label sr-only" for="Submit"></label>
+                    <div class="col-sm-1">
+                        <button type="submit" class="btn btn-primary" id="Submit">Calculate</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+</div>
