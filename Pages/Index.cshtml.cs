@@ -50,7 +50,7 @@ public class IndexModel : PageModel
         }
         else
         {
-            ErrorMessage = "You did not enter any number, no statistics were calculated";
+            ErrorMessage = "You did not enter any number, no statistics were calculated.";
         }
     }
 }
